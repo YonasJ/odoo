@@ -92,7 +92,8 @@ except ImportError:
 
 _logger = logging.getLogger(__name__)
 if config['test_enable'] or config['test_file']:
-    _logger.info("Importing test framework", stack_info=_logger.isEnabledFor(logging.DEBUG))
+    _logger.info("Importing test framework")
+    # _logger.info("Importing test framework", stack_info=_logger.isEnabledFor(logging.DEBUG))
 else:
     _logger.error(
         "Importing test framework"
